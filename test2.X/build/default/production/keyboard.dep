@@ -1,0 +1,22 @@
+C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16f1823.h
+keyboard.h
+define.h
+C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\htc.h
+C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\stdint.h
+C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\stdlib.h
+system_init.h
+config.h
+logic_control.h
+C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\stdio.h
+C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\eeprom_routines.h
+C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\conio.h
+C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\chip_select.h
+uart.h
+signal.h
+C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic.h
+adc.h
+interrupt.h
+delay.h
+C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\stdarg.h
+lowpower.h
+motor.h
