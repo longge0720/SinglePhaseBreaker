@@ -22,7 +22,7 @@ __CONFIG(FOSC_INTOSC & WDTE_OFF & PWRTE_OFF & MCLRE_ON & CP_ON & CPD_ON & BOREN_
 __CONFIG(WRT_OFF&PLLEN_ON&LVP_OFF&STVREN_OFF&BORV_19&LVP_ON) ;
 #endif*/
 
-//#define VERSION_STR     "Single Phase V1.1\r\n"
+#define VERSION_STR     "V1.0"
 /*
  * 先初始化时钟，然后初始化外设（定时器，IO，ADC），PIC子函数调用不能超过8级
  */
