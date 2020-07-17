@@ -1,7 +1,7 @@
 
 
 HI-TECH Software PIC LITE Macro Assembler V9.82 build 9453 
-                                                                                               Wed Jul 15 10:05:55 2020
+                                                                                               Thu Jul 16 10:54:56 2020
 
 HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
      1  0000                     opt subtitle "HI-TECH Software Omniscient Code Generator (Lite mode) build 9453"
@@ -427,7 +427,7 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
    420  0392  340A               	retlw	10
    421  0393  3400               	retlw	0
    422                           psect	strings
-   423                           	file	"C:\Users\sunxi\AppData\Local\Temp\se90."
+   423                           	file	"C:\Users\sunxi\AppData\Local\Temp\sa4o."
    424                           	line	#
    425                           psect cinit,class=CODE,delta=2
    426                           global start_initialization
@@ -6459,7 +6459,7 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
 
 
 HI-TECH Software PICC Macro Assembler V9.82 build 9453 
-Symbol Table                                                                                   Wed Jul 15 10:05:55 2020
+Symbol Table                                                                                   Thu Jul 16 10:54:56 2020
 
         __end_of_ADC_AllPin_Init 06DE                ??_InterruptTimer0 007C                               _RD 0CA8  
         ?_Motor_Counterclockwise 0070                               _WR 0CA9          __size_of_Motor_GetStaus 000B  
