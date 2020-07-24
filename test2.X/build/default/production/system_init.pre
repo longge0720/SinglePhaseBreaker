@@ -126,7 +126,7 @@ extern char * utoa(char * buf, unsigned val, int base);
 extern char * ltoa(char * buf, long val, int base);
 extern char * ultoa(char * buf, unsigned long val, int base);
 
-# 132 "C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16f1823.h"
+# 132 "C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16lf1823.h"
 volatile unsigned char INDF0 @ 0x000;
 
 

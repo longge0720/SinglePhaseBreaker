@@ -216,7 +216,7 @@ typedef int16_t intptr_t;
 
 typedef uint16_t uintptr_t;
 
-# 132 "C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16f1823.h"
+# 132 "C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16lf1823.h"
 volatile unsigned char INDF0 @ 0x000;
 
 
@@ -2651,11 +2651,11 @@ void internal_E2Read(uint8_t addr,uint8_t *dat,uint8_t len);
 void internal_E2Write(uint8_t addr,uint8_t *dat,uint8_t len);
 void e2SavePara(e2Enum_t val);
 
-# 17 "main.c"
+# 22 "main.c"
 asm("\tpsect config,class=CONFIG,delta=2"); asm("\tdw ""0xFFFC & 0xFFEF & 0xFFFF & 0xFFFF & 0xFF7F & 0xFFFF & 0xFFFF & 0xFFFF & 0xFFFF & 0xFFFF");
 asm("\tpsect config,class=CONFIG,delta=2"); asm("\tdw ""0xFFFF&0xFEFF&0xDFFF&0xFDFF&0xFFFF&0xFFFF") ;
 
-# 39
+# 44
 uint8_t flag_uart = 0;
 
 extern uint8_t Ctr_Signal;
@@ -2700,7 +2700,7 @@ RC5 = 1;
 for(int i=0;i<6;i++)
 {
 
-# 88
+# 93
 Delay_MS(1250);
 }
 

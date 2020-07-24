@@ -11,6 +11,11 @@
 #include <stdio.h>
 #include "motor.h"
 #include "internal_e2prom.h"
+#include <htc.h>
+
+
+//__CONFIG(FOSC_INTOSC & WDTE_SWDTEN & PWRTE_OFF & MCLRE_ON & CP_ON & CPD_OFF & BOREN_ON & CLKOUTEN_OFF & IESO_ON & FCMEN_ON);
+//__CONFIG(WRT_OFF & PLLEN_OFF & STVREN_OFF & BORV_19 & LVP_ON);
 /*控制信号为0.5V ~ 1.5V 信号 V1.0版本*/
 //#ifdef      PIC_DEBUG_VERSION           
 //DEBUG 版本，怎么方便怎么配置，没有启动代码保护，内部E2PROM未启动，看门狗关闭,使用PLL*4，系统时钟为32MHz

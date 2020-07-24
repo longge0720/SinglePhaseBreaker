@@ -1,7 +1,7 @@
 
 
 HI-TECH Software PIC LITE Macro Assembler V9.82 build 9453 
-                                                                                               Thu Jul 16 10:54:56 2020
+                                                                                               Fri Jul 24 14:20:13 2020
 
 HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
      1  0000                     opt subtitle "HI-TECH Software Omniscient Code Generator (Lite mode) build 9453"
@@ -10,7 +10,7 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
      4                           
      5                           	opt lm
      6                           
-     7                           	processor	16F1823
+     7                           	processor	16LF1823
      8                           clrc	macro
      9                           	bcf	3,0
     10  0000                     	endm
@@ -51,14 +51,14 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
     45  0001                     c	equ	1
     46  0000                     z	equ	0
     47  000A                     pclath	equ	10
-    48                           # 17 "main.c"
+    48                           # 22 "main.c"
     49                           	psect config,class=CONFIG,delta=2 ;#
-    50                           # 17 "main.c"
+    50                           # 22 "main.c"
     51  8007  FF6C               	dw 0xFFFC & 0xFFEF & 0xFFFF & 0xFFFF & 0xFF7F & 0xFFFF & 0xFFFF & 0xFFFF & 0xFFFF & 0xF
                                  FFF ;#
-    52                           # 18 "main.c"
+    52                           # 23 "main.c"
     53                           	psect config,class=CONFIG,delta=2 ;#
-    54                           # 18 "main.c"
+    54                           # 23 "main.c"
     55  8008  DCFF               	dw 0xFFFF&0xFEFF&0xDFFF&0xFDFF&0xFFFF&0xFFFF ;#
     56                           	FNCALL	_main,_PIC_ConfigClock
     57                           	FNCALL	_main,_PIC_ConfigOptionReg
@@ -427,7 +427,7 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
    420  0392  340A               	retlw	10
    421  0393  3400               	retlw	0
    422                           psect	strings
-   423                           	file	"C:\Users\sunxi\AppData\Local\Temp\sa4o."
+   423                           	file	"C:\Users\sunxi\AppData\Local\Temp\s95g."
    424                           	line	#
    425                           psect cinit,class=CODE,delta=2
    426                           global start_initialization
@@ -1188,7 +1188,7 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
   1181                           
   1182 ;; *************** function _main *****************
   1183 ;; Defined at:
-  1184 ;;		line 53 in file "main.c"
+  1184 ;;		line 58 in file "main.c"
   1185 ;; Parameters:    Size  Location     Type
   1186 ;;  argc            2    9[BANK0 ] int 
   1187 ;;  argv            2   11[BANK0 ] PTR PTR unsigned char 
@@ -1236,78 +1236,78 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
   1229 ;;
   1230                           psect	maintext
   1231                           	file	"main.c"
-  1232                           	line	53
+  1232                           	line	58
   1233                           	global	__size_of_main
   1234  00FF                     	__size_of_main	equ	__end_of_main-_main
   1235                           	
   1236  001A                     _main:	
   1237                           	opt	stack 7
   1238                           ; Regs used in _main: [allreg]
-  1239                           	line	57
+  1239                           	line	62
   1240                           	
   1241  001A                     l19523:	
-  1242                           ;main.c: 57: uint8_t tmpbuf = 0;
+  1242                           ;main.c: 62: uint8_t tmpbuf = 0;
   1243  001A  0020               	movlb 0	; select bank0
   1244  001B  01D6               	clrf	(main@tmpbuf)
-  1245                           	line	59
+  1245                           	line	64
   1246                           	
   1247  001C                     l19525:	
-  1248                           ;main.c: 59: PIC_ConfigClock();
+  1248                           ;main.c: 64: PIC_ConfigClock();
   1249  001C  3185  25D4  3180   	fcall	_PIC_ConfigClock
-  1250                           	line	61
-  1251                           ;main.c: 61: PIC_ConfigOptionReg();
+  1250                           	line	66
+  1251                           ;main.c: 66: PIC_ConfigOptionReg();
   1252  001F  3185  250B  3180   	fcall	_PIC_ConfigOptionReg
-  1253                           	line	62
-  1254                           ;main.c: 62: PIC_ConfigGPIO();
+  1253                           	line	67
+  1254                           ;main.c: 67: PIC_ConfigGPIO();
   1255  0022  3186  2654  3180   	fcall	_PIC_ConfigGPIO
-  1256                           	line	64
-  1257                           ;main.c: 64: PIC_CofnigTimer0();
+  1256                           	line	69
+  1257                           ;main.c: 69: PIC_CofnigTimer0();
   1258  0025  3186  2643  3180   	fcall	_PIC_CofnigTimer0
-  1259                           	line	65
+  1259                           	line	70
   1260                           	
   1261  0028                     l19527:	
-  1262                           ;main.c: 65: PIC_EnableInterrupt();
+  1262                           ;main.c: 70: PIC_EnableInterrupt();
   1263  0028  3187  2703  3180   	fcall	_PIC_EnableInterrupt
-  1264                           	line	66
+  1264                           	line	71
   1265                           	
   1266  002B                     l19529:	
-  1267                           ;main.c: 66: KeyInit();
+  1267                           ;main.c: 71: KeyInit();
   1268  002B  3186  26C7  3180   	fcall	_KeyInit
-  1269                           	line	67
+  1269                           	line	72
   1270                           	
   1271  002E                     l19531:	
-  1272                           ;main.c: 67: PowerSwitch_Init();
+  1272                           ;main.c: 72: PowerSwitch_Init();
   1273  002E  3186  2632  3180   	fcall	_PowerSwitch_Init
-  1274                           	line	68
+  1274                           	line	73
   1275                           	
   1276  0031                     l19533:	
-  1277                           ;main.c: 68: Motor_Init();
+  1277                           ;main.c: 73: Motor_Init();
   1278  0031  3184  24B2  3180   	fcall	_Motor_Init
-  1279                           	line	69
+  1279                           	line	74
   1280                           	
   1281  0034                     l19535:	
-  1282                           ;main.c: 69: ADC_Init();
+  1282                           ;main.c: 74: ADC_Init();
   1283  0034  3185  25E9  3180   	fcall	_ADC_Init
-  1284                           	line	74
+  1284                           	line	79
   1285                           	
   1286  0037                     l19537:	
-  1287                           ;main.c: 74: internal_E2promInit();
+  1287                           ;main.c: 79: internal_E2promInit();
   1288  0037  3184  24E0  3180   	fcall	_internal_E2promInit
-  1289                           	line	77
+  1289                           	line	82
   1290                           	
   1291  003A                     l19539:	
-  1292                           ;main.c: 77: RC2 = 1;
+  1292                           ;main.c: 82: RC2 = 1;
   1293  003A  0020               	movlb 0	; select bank0
   1294  003B  150E               	bsf	(114/8),(114)&7
-  1295                           	line	78
+  1295                           	line	83
   1296                           	
   1297  003C                     l19541:	
-  1298                           ;main.c: 78: RC5 = 1;
+  1298                           ;main.c: 83: RC5 = 1;
   1299  003C  168E               	bsf	(117/8),(117)&7
-  1300                           	line	80
+  1300                           	line	85
   1301                           	
   1302  003D                     l19543:	
-  1303                           ;main.c: 80: for(int i=0;i<6;i++)
+  1303                           ;main.c: 85: for(int i=0;i<6;i++)
   1304  003D  01D4               	clrf	(main@i)
   1305  003E  01D5               	clrf	(main@i+1)
   1306                           	
@@ -1333,21 +1333,21 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
   1326                           	
   1327  004D                     l19547:	
   1328  004D  2869               	goto	l19555
-  1329                           	line	81
+  1329                           	line	86
   1330                           	
   1331  004E                     l1351:	
-  1332                           	line	88
+  1332                           	line	93
   1333                           	
   1334  004E                     l19549:	
-  1335                           ;main.c: 81: {
-  1336                           ;main.c: 88: Delay_MS(1250);
+  1335                           ;main.c: 86: {
+  1336                           ;main.c: 93: Delay_MS(1250);
   1337  004E  30E2               	movlw	low(04E2h)
   1338  004F  0020               	movlb 0	; select bank0
   1339  0050  00C6               	movwf	(?_Delay_MS)
   1340  0051  3004               	movlw	high(04E2h)
   1341  0052  00C7               	movwf	((?_Delay_MS))+1
   1342  0053  3186  2621  3180   	fcall	_Delay_MS
-  1343                           	line	80
+  1343                           	line	85
   1344                           	
   1345  0056                     l19551:	
   1346  0056  3001               	movlw	low(01h)
@@ -1377,11 +1377,11 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
   1370  0068  2869               	goto	l19555
   1371                           	
   1372  0069                     l1352:	
-  1373                           	line	91
+  1373                           	line	96
   1374                           	
   1375  0069                     l19555:	
-  1376                           ;main.c: 89: }
-  1377                           ;main.c: 91: if(Ctr_Signal == Ctrl_SignalValid)
+  1376                           ;main.c: 94: }
+  1377                           ;main.c: 96: if(Ctr_Signal == Ctrl_SignalValid)
   1378  0069  0020               	movlb 0	; select bank0
   1379  006A  083A               	movf	(_Ctr_Signal),w
   1380  006B  3A01               	xorlw	01h&0ffh
@@ -1391,11 +1391,11 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
   1384  006F                     u3461:
   1385  006F  2884               	goto	l19563
   1386  0070                     u3460:
-  1387                           	line	94
+  1387                           	line	99
   1388                           	
   1389  0070                     l19557:	
-  1390                           ;main.c: 92: {
-  1391                           ;main.c: 94: if((gE2promState.systemState ==eE2State_AutoOpen ) || (gE2promState.systemS
+  1390                           ;main.c: 97: {
+  1391                           ;main.c: 99: if((gE2promState.systemState ==eE2State_AutoOpen ) || (gE2promState.systemS
                                  tate ==eE2State_AutoOpen ))
   1392  0070  0844               	movf	0+(_gE2promState)+01h,w
   1393  0071  3A01               	xorlw	01h&0ffh
@@ -1417,21 +1417,21 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
   1409  007C                     u3480:
   1410                           	
   1411  007C                     l1356:	
-  1412                           	line	96
-  1413                           ;main.c: 95: {
-  1414                           ;main.c: 96: Ctr_SignalBck = Ctrl_SignalInvalid;
+  1412                           	line	101
+  1413                           ;main.c: 100: {
+  1414                           ;main.c: 101: Ctr_SignalBck = Ctrl_SignalInvalid;
   1415  007C  01BB               	clrf	(_Ctr_SignalBck)
-  1416                           	line	97
-  1417                           ;main.c: 97: }
+  1416                           	line	102
+  1417                           ;main.c: 102: }
   1418  007D  2888               	goto	l19565
-  1419                           	line	98
+  1419                           	line	103
   1420                           	
   1421  007E                     l1354:	
-  1422                           	line	100
+  1422                           	line	105
   1423                           	
   1424  007E                     l19561:	
-  1425                           ;main.c: 98: else
-  1426                           ;main.c: 100: Ctr_SignalBck = Ctr_Signal;
+  1425                           ;main.c: 103: else
+  1426                           ;main.c: 105: Ctr_SignalBck = Ctr_Signal;
   1427  007E  083A               	movf	(_Ctr_Signal),w
   1428  007F  00D3               	movwf	(??_main+0)+0
   1429  0080  0853               	movf	(??_main+0)+0,w
@@ -1439,58 +1439,58 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
   1431  0082  2888               	goto	l19565
   1432                           	
   1433  0083                     l1357:	
-  1434                           	line	102
-  1435                           ;main.c: 102: }
+  1434                           	line	107
+  1435                           ;main.c: 107: }
   1436  0083  2888               	goto	l19565
-  1437                           	line	103
+  1437                           	line	108
   1438                           	
   1439  0084                     l1353:	
-  1440                           	line	105
+  1440                           	line	110
   1441                           	
   1442  0084                     l19563:	
-  1443                           ;main.c: 103: else
-  1444                           ;main.c: 104: {
-  1445                           ;main.c: 105: Ctr_SignalBck = Ctrl_SignalValid;
+  1443                           ;main.c: 108: else
+  1444                           ;main.c: 109: {
+  1445                           ;main.c: 110: Ctr_SignalBck = Ctrl_SignalValid;
   1446  0084  01BB               	clrf	(_Ctr_SignalBck)
   1447  0085  1403               	bsf	status,0
   1448  0086  0DBB               	rlf	(_Ctr_SignalBck),f
   1449  0087  2888               	goto	l19565
-  1450                           	line	107
+  1450                           	line	112
   1451                           	
   1452  0088                     l1358:	
-  1453                           	line	108
+  1453                           	line	113
   1454                           	
   1455  0088                     l19565:	
-  1456                           ;main.c: 107: }
-  1457                           ;main.c: 108: Motor_Stop();
+  1456                           ;main.c: 112: }
+  1457                           ;main.c: 113: Motor_Stop();
   1458  0088  3185  25A9  3180   	fcall	_Motor_Stop
-  1459                           	line	110
+  1459                           	line	115
   1460                           	
   1461  008B                     l19567:	
-  1462                           ;main.c: 110: WatchDog_Init();
+  1462                           ;main.c: 115: WatchDog_Init();
   1463  008B  3186  26FC  3180   	fcall	_WatchDog_Init
-  1464                           	line	111
+  1464                           	line	116
   1465                           	
   1466  008E                     l19569:	
-  1467                           ;main.c: 111: isLowPower = NormalMode;
+  1467                           ;main.c: 116: isLowPower = NormalMode;
   1468  008E  0020               	movlb 0	; select bank0
   1469  008F  01C2               	clrf	(_isLowPower)
-  1470                           	line	112
+  1470                           	line	117
   1471                           	
   1472  0090                     l19571:	
-  1473                           ;main.c: 112: numOf120ms = 0;
+  1473                           ;main.c: 117: numOf120ms = 0;
   1474  0090  01B6               	clrf	(_numOf120ms)
   1475  0091  01B7               	clrf	(_numOf120ms+1)
   1476  0092  2893               	goto	l19573
-  1477                           	line	114
-  1478                           ;main.c: 114: while(1)
+  1477                           	line	119
+  1478                           ;main.c: 119: while(1)
   1479                           	
   1480  0093                     l1359:	
-  1481                           	line	116
+  1481                           	line	121
   1482                           	
   1483  0093                     l19573:	
-  1484                           ;main.c: 115: {
-  1485                           ;main.c: 116: if(isLowPower == NormalMode)
+  1484                           ;main.c: 120: {
+  1485                           ;main.c: 121: if(isLowPower == NormalMode)
   1486  0093  0020               	movlb 0	; select bank0
   1487  0094  08C2               	movf	(_isLowPower),f
   1488  0095  1D03               	skipz
@@ -1499,26 +1499,26 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
   1491  0098                     u3491:
   1492  0098  28AC               	goto	l19585
   1493  0099                     u3490:
-  1494                           	line	118
+  1494                           	line	123
   1495                           	
   1496  0099                     l19575:	
-  1497                           ;main.c: 117: {
-  1498                           ;main.c: 118: Feed_WatchDog();
+  1497                           ;main.c: 122: {
+  1498                           ;main.c: 123: Feed_WatchDog();
   1499  0099  3187  2706  3180   	fcall	_Feed_WatchDog
-  1500                           	line	119
+  1500                           	line	124
   1501                           	
   1502  009C                     l19577:	
-  1503                           ;main.c: 119: KeyDriver();
+  1503                           ;main.c: 124: KeyDriver();
   1504  009C  3185  252D  3180   	fcall	_KeyDriver
-  1505                           	line	120
+  1505                           	line	125
   1506                           	
   1507  009F                     l19579:	
-  1508                           ;main.c: 120: MainLoop();
+  1508                           ;main.c: 125: MainLoop();
   1509  009F  3186  26E9  3180   	fcall	_MainLoop
-  1510                           	line	121
+  1510                           	line	126
   1511                           	
   1512  00A2                     l19581:	
-  1513                           ;main.c: 121: if(RA2 == 0)
+  1513                           ;main.c: 126: if(RA2 == 0)
   1514  00A2  0020               	movlb 0	; select bank0
   1515  00A3  190C               	btfsc	(98/8),(98)&7
   1516  00A4  28A6               	goto	u3501
@@ -1526,26 +1526,26 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
   1518  00A6                     u3501:
   1519  00A6  2893               	goto	l19573
   1520  00A7                     u3500:
-  1521                           	line	123
+  1521                           	line	128
   1522                           	
   1523  00A7                     l19583:	
-  1524                           ;main.c: 122: {
-  1525                           ;main.c: 123: WatchDog_Reset();
+  1524                           ;main.c: 127: {
+  1525                           ;main.c: 128: WatchDog_Reset();
   1526  00A7  3186  26F6  3180   	fcall	_WatchDog_Reset
   1527  00AA  2893               	goto	l19573
-  1528                           	line	124
+  1528                           	line	129
   1529                           	
   1530  00AB                     l1361:	
-  1531                           	line	125
-  1532                           ;main.c: 124: }
-  1533                           ;main.c: 125: }
+  1531                           	line	130
+  1532                           ;main.c: 129: }
+  1533                           ;main.c: 130: }
   1534  00AB  2893               	goto	l19573
-  1535                           	line	126
+  1535                           	line	131
   1536                           	
   1537  00AC                     l1360:	
   1538                           	
   1539  00AC                     l19585:	
-  1540                           ;main.c: 126: else if(isLowPower == LowPowerMode)
+  1540                           ;main.c: 131: else if(isLowPower == LowPowerMode)
   1541  00AC  0020               	movlb 0	; select bank0
   1542  00AD  0842               	movf	(_isLowPower),w
   1543  00AE  3A01               	xorlw	01h&0ffh
@@ -1555,36 +1555,36 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
   1547  00B2                     u3511:
   1548  00B2  2893               	goto	l19573
   1549  00B3                     u3510:
-  1550                           	line	128
+  1550                           	line	133
   1551                           	
   1552  00B3                     l19587:	
-  1553                           ;main.c: 127: {
-  1554                           ;main.c: 128: INTCON &= ~(0x01 << 7);
+  1553                           ;main.c: 132: {
+  1554                           ;main.c: 133: INTCON &= ~(0x01 << 7);
   1555  00B3  307F               	movlw	(07Fh)
   1556  00B4  00D3               	movwf	(??_main+0)+0
   1557  00B5  0853               	movf	(??_main+0)+0,w
   1558  00B6  058B               	andwf	(11),f	;volatile
-  1559                           	line	129
-  1560                           ;main.c: 129: ADCON0 &= ~0x01;
+  1559                           	line	134
+  1560                           ;main.c: 134: ADCON0 &= ~0x01;
   1561  00B7  30FE               	movlw	(0FEh)
   1562  00B8  00D3               	movwf	(??_main+0)+0
   1563  00B9  0853               	movf	(??_main+0)+0,w
   1564  00BA  0021               	movlb 1	; select bank1
   1565  00BB  059D               	andwf	(157)^080h,f	;volatile
-  1566                           	line	130
+  1566                           	line	135
   1567                           	
   1568  00BC                     l19589:	
-  1569                           ;main.c: 130: Motor_LowPower();
+  1569                           ;main.c: 135: Motor_LowPower();
   1570  00BC  3186  2665  3180   	fcall	_Motor_LowPower
-  1571                           	line	131
+  1571                           	line	136
   1572                           	
   1573  00BF                     l19591:	
-  1574                           ;main.c: 131: PIC_ConfigClock32Khz();
+  1574                           ;main.c: 136: PIC_ConfigClock32Khz();
   1575  00BF  3186  2693  3180   	fcall	_PIC_ConfigClock32Khz
-  1576                           	line	132
+  1576                           	line	137
   1577                           	
   1578  00C2                     l19593:	
-  1579                           ;main.c: 132: if(Ctr_Signal == Ctrl_SignalValid)
+  1579                           ;main.c: 137: if(Ctr_Signal == Ctrl_SignalValid)
   1580  00C2  0020               	movlb 0	; select bank0
   1581  00C3  083A               	movf	(_Ctr_Signal),w
   1582  00C4  3A01               	xorlw	01h&0ffh
@@ -1594,38 +1594,38 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
   1586  00C8                     u3521:
   1587  00C8  28CE               	goto	l1364
   1588  00C9                     u3520:
-  1589                           	line	134
+  1589                           	line	139
   1590                           	
   1591  00C9                     l19595:	
-  1592                           ;main.c: 133: {
-  1593                           ;main.c: 134: tmpbuf = 0xff;
+  1592                           ;main.c: 138: {
+  1593                           ;main.c: 139: tmpbuf = 0xff;
   1594  00C9  30FF               	movlw	(0FFh)
   1595  00CA  00D3               	movwf	(??_main+0)+0
   1596  00CB  0853               	movf	(??_main+0)+0,w
   1597  00CC  00D6               	movwf	(main@tmpbuf)
-  1598                           	line	135
-  1599                           ;main.c: 135: }
+  1598                           	line	140
+  1599                           ;main.c: 140: }
   1600  00CD  28D0               	goto	l1366
-  1601                           	line	136
+  1601                           	line	141
   1602                           	
   1603  00CE                     l1364:	
-  1604                           	line	138
-  1605                           ;main.c: 136: else
-  1606                           ;main.c: 137: {
-  1607                           ;main.c: 138: tmpbuf = 0x00;
+  1604                           	line	143
+  1605                           ;main.c: 141: else
+  1606                           ;main.c: 142: {
+  1607                           ;main.c: 143: tmpbuf = 0x00;
   1608  00CE  01D6               	clrf	(main@tmpbuf)
   1609  00CF  28D0               	goto	l1366
-  1610                           	line	139
+  1610                           	line	144
   1611                           	
   1612  00D0                     l1365:	
-  1613                           	line	140
-  1614                           ;main.c: 139: }
-  1615                           ;main.c: 140: while(1)
+  1613                           	line	145
+  1614                           ;main.c: 144: }
+  1615                           ;main.c: 145: while(1)
   1616                           	
   1617  00D0                     l1366:	
-  1618                           	line	142
-  1619                           ;main.c: 141: {
-  1620                           ;main.c: 142: if(RC1 == 0)
+  1618                           	line	147
+  1619                           ;main.c: 146: {
+  1620                           ;main.c: 147: if(RC1 == 0)
   1621  00D0  0020               	movlb 0	; select bank0
   1622  00D1  188E               	btfsc	(113/8),(113)&7
   1623  00D2  28D4               	goto	u3531
@@ -1633,48 +1633,48 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
   1625  00D4                     u3531:
   1626  00D4  28DB               	goto	l1367
   1627  00D5                     u3530:
-  1628                           	line	144
+  1628                           	line	149
   1629                           	
   1630  00D5                     l19597:	
-  1631                           ;main.c: 143: {
-  1632                           ;main.c: 144: tmpbuf = (tmpbuf << 1) | 0;
+  1631                           ;main.c: 148: {
+  1632                           ;main.c: 149: tmpbuf = (tmpbuf << 1) | 0;
   1633  00D5  0856               	movf	(main@tmpbuf),w
   1634  00D6  0709               	addwf	wreg,w
   1635  00D7  00D3               	movwf	(??_main+0)+0
   1636  00D8  0853               	movf	(??_main+0)+0,w
   1637  00D9  00D6               	movwf	(main@tmpbuf)
-  1638                           	line	145
-  1639                           ;main.c: 145: }
+  1638                           	line	150
+  1639                           ;main.c: 150: }
   1640  00DA  28E3               	goto	l19601
-  1641                           	line	146
+  1641                           	line	151
   1642                           	
   1643  00DB                     l1367:	
-  1644                           ;main.c: 146: else if(RC1 == 1)
+  1644                           ;main.c: 151: else if(RC1 == 1)
   1645  00DB  1C8E               	btfss	(113/8),(113)&7
   1646  00DC  28DE               	goto	u3541
   1647  00DD  28DF               	goto	u3540
   1648  00DE                     u3541:
   1649  00DE  28E3               	goto	l19601
   1650  00DF                     u3540:
-  1651                           	line	148
+  1651                           	line	153
   1652                           	
   1653  00DF                     l19599:	
-  1654                           ;main.c: 147: {
-  1655                           ;main.c: 148: tmpbuf = (tmpbuf << 1) | 1;
+  1654                           ;main.c: 152: {
+  1655                           ;main.c: 153: tmpbuf = (tmpbuf << 1) | 1;
   1656  00DF  1403               	setc
   1657  00E0  0DD6               	rlf	(main@tmpbuf),f
   1658  00E1  28E3               	goto	l19601
-  1659                           	line	149
+  1659                           	line	154
   1660                           	
   1661  00E2                     l1369:	
   1662  00E2  28E3               	goto	l19601
-  1663                           	line	150
+  1663                           	line	155
   1664                           	
   1665  00E3                     l1368:	
   1666                           	
   1667  00E3                     l19601:	
-  1668                           ;main.c: 149: }
-  1669                           ;main.c: 150: if((tmpbuf==0xff) && Ctr_Signal == Ctrl_SignalInvalid)
+  1668                           ;main.c: 154: }
+  1669                           ;main.c: 155: if((tmpbuf==0xff) && Ctr_Signal == Ctrl_SignalInvalid)
   1670  00E3  0856               	movf	(main@tmpbuf),w
   1671  00E4  3AFF               	xorlw	0FFh&0ffh
   1672  00E5  1D03               	skipz
@@ -1693,20 +1693,20 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
   1685  00ED  28F0               	goto	l19607
   1686  00EE                     u3560:
   1687  00EE  2909               	goto	l1371
-  1688                           	line	152
+  1688                           	line	157
   1689                           	
   1690  00EF                     l19605:	
-  1691                           ;main.c: 151: {
-  1692                           ;main.c: 152: break;
+  1691                           ;main.c: 156: {
+  1692                           ;main.c: 157: break;
   1693  00EF  2909               	goto	l1371
-  1694                           	line	153
+  1694                           	line	158
   1695                           	
   1696  00F0                     l1370:	
-  1697                           	line	155
+  1697                           	line	160
   1698                           	
   1699  00F0                     l19607:	
-  1700                           ;main.c: 153: }
-  1701                           ;main.c: 155: if((tmpbuf==0x00) && Ctr_Signal == Ctrl_SignalValid)
+  1700                           ;main.c: 158: }
+  1701                           ;main.c: 160: if((tmpbuf==0x00) && Ctr_Signal == Ctrl_SignalValid)
   1702  00F0  08D6               	movf	(main@tmpbuf),f
   1703  00F1  1D03               	skipz
   1704  00F2  28F4               	goto	u3571
@@ -1725,90 +1725,90 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
   1717  00FA  28FD               	goto	l1372
   1718  00FB                     u3580:
   1719  00FB  2909               	goto	l1371
-  1720                           	line	157
+  1720                           	line	162
   1721                           	
   1722  00FC                     l19611:	
-  1723                           ;main.c: 156: {
-  1724                           ;main.c: 157: break;
+  1723                           ;main.c: 161: {
+  1724                           ;main.c: 162: break;
   1725  00FC  2909               	goto	l1371
-  1726                           	line	158
+  1726                           	line	163
   1727                           	
   1728  00FD                     l1372:	
-  1729                           	line	159
-  1730                           ;main.c: 158: }
-  1731                           ;main.c: 159: if(RA2 == 0)
+  1729                           	line	164
+  1730                           ;main.c: 163: }
+  1731                           ;main.c: 164: if(RA2 == 0)
   1732  00FD  190C               	btfsc	(98/8),(98)&7
   1733  00FE  2900               	goto	u3591
   1734  00FF  2901               	goto	u3590
   1735  0100                     u3591:
   1736  0100  2904               	goto	l1373
   1737  0101                     u3590:
-  1738                           	line	161
+  1738                           	line	166
   1739                           	
   1740  0101                     l19613:	
-  1741                           ;main.c: 160: {
-  1742                           ;main.c: 161: WatchDog_Reset();
+  1741                           ;main.c: 165: {
+  1742                           ;main.c: 166: WatchDog_Reset();
   1743  0101  3186  26F6  3180   	fcall	_WatchDog_Reset
-  1744                           	line	162
+  1744                           	line	167
   1745                           	
   1746  0104                     l1373:	
-  1747                           	line	163
-  1748                           ;main.c: 162: }
-  1749                           ;main.c: 163: Feed_WatchDog();
+  1747                           	line	168
+  1748                           ;main.c: 167: }
+  1749                           ;main.c: 168: Feed_WatchDog();
   1750  0104  3187  2706  3180   	fcall	_Feed_WatchDog
   1751  0107  28D0               	goto	l1366
-  1752                           	line	164
+  1752                           	line	169
   1753                           	
   1754  0108                     l1374:	
-  1755                           	line	140
+  1755                           	line	145
   1756  0108  28D0               	goto	l1366
   1757                           	
   1758  0109                     l1371:	
-  1759                           	line	165
-  1760                           ;main.c: 164: }
-  1761                           ;main.c: 165: isLowPower = NormalMode;
+  1759                           	line	170
+  1760                           ;main.c: 169: }
+  1761                           ;main.c: 170: isLowPower = NormalMode;
   1762  0109  01C2               	clrf	(_isLowPower)
-  1763                           	line	166
+  1763                           	line	171
   1764                           	
   1765  010A                     l19615:	
-  1766                           ;main.c: 166: numOf120ms = 0;
+  1766                           ;main.c: 171: numOf120ms = 0;
   1767  010A  01B6               	clrf	(_numOf120ms)
   1768  010B  01B7               	clrf	(_numOf120ms+1)
-  1769                           	line	167
+  1769                           	line	172
   1770                           	
   1771  010C                     l19617:	
-  1772                           ;main.c: 167: PIC_ConfigClock();
+  1772                           ;main.c: 172: PIC_ConfigClock();
   1773  010C  3185  25D4  3180   	fcall	_PIC_ConfigClock
-  1774                           	line	168
+  1774                           	line	173
   1775                           	
   1776  010F                     l19619:	
-  1777                           ;main.c: 168: ADCON0 |= 0x01;
+  1777                           ;main.c: 173: ADCON0 |= 0x01;
   1778  010F  0021               	movlb 1	; select bank1
   1779  0110  141D               	bsf	(157)^080h+(0/8),(0)&7	;volatile
-  1780                           	line	169
+  1780                           	line	174
   1781                           	
   1782  0111                     l19621:	
-  1783                           ;main.c: 169: PIC_EnableInterrupt();
+  1783                           ;main.c: 174: PIC_EnableInterrupt();
   1784  0111  3187  2703  3180   	fcall	_PIC_EnableInterrupt
   1785  0114  2893               	goto	l19573
-  1786                           	line	170
+  1786                           	line	175
   1787                           	
   1788  0115                     l1363:	
   1789  0115  2893               	goto	l19573
-  1790                           	line	171
+  1790                           	line	176
   1791                           	
   1792  0116                     l1362:	
   1793  0116  2893               	goto	l19573
   1794                           	
   1795  0117                     l1375:	
-  1796                           	line	114
+  1796                           	line	119
   1797  0117  2893               	goto	l19573
   1798                           	
   1799  0118                     l1376:	
-  1800                           	line	173
-  1801                           ;main.c: 170: }
-  1802                           ;main.c: 171: }
-  1803                           ;main.c: 172: return (0);
+  1800                           	line	178
+  1801                           ;main.c: 175: }
+  1802                           ;main.c: 176: }
+  1803                           ;main.c: 177: return (0);
   1804                           ;	Return value of _main is never used
   1805                           	
   1806  0118                     l1377:	
@@ -6459,7 +6459,7 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
 
 
 HI-TECH Software PICC Macro Assembler V9.82 build 9453 
-Symbol Table                                                                                   Thu Jul 16 10:54:56 2020
+Symbol Table                                                                                   Fri Jul 24 14:20:13 2020
 
         __end_of_ADC_AllPin_Init 06DE                ??_InterruptTimer0 007C                               _RD 0CA8  
         ?_Motor_Counterclockwise 0070                               _WR 0CA9          __size_of_Motor_GetStaus 000B  

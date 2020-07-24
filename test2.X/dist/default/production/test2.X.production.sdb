@@ -1,8 +1,8 @@
 [p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
 [d version 1.1 ]
 [d edition pro ]
-[d chip 16F1823 ]
-"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16f1823.h
+[d chip 16LF1823 ]
+"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16lf1823.h
 [s S28 . 1 `uc 1 C 1 0 :1:0 
 `uc 1 DC 1 0 :1:1 
 `uc 1 Z 1 0 :1:2 
@@ -894,12 +894,12 @@
 [s S2360 . 1 `uc 1 TOSH 1 0 :7:0 
 ]
 [u S2362 . 1 `S2360 1 . 1 0 ]
-"39 main.c
+"44 main.c
 [e E2464 . `uc
 NormalMode 0
 LowPowerMode 1
 ]
-"41
+"46
 [e E2373 . `uc
 Ctrl_SignalInvalid 0
 Ctrl_SignalValid 1
@@ -913,7 +913,7 @@ eE2State_AutoClose 2
 eE2State_ManOpen 3
 eE2State_ManClose 4
 ]
-"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16f1823.h
+"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16lf1823.h
 [s S2484 . 1 `uc 1 C 1 0 :1:0 
 `uc 1 DC 1 0 :1:1 
 `uc 1 Z 1 0 :1:2 
@@ -1807,7 +1807,7 @@ eE2State_ManClose 4
 [u S4068 . 1 `S2360 1 . 1 0 ]
 "36 interrupt.c
 [v F2422 `(v  1 t 0 ]
-"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16f1823.h
+"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16lf1823.h
 [s S4102 . 1 `uc 1 C 1 0 :1:0 
 `uc 1 DC 1 0 :1:1 
 `uc 1 Z 1 0 :1:2 
@@ -3622,7 +3622,7 @@ eE2State_AutoClose 2
 eE2State_ManOpen 3
 eE2State_ManClose 4
 ]
-"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16f1823.h
+"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16lf1823.h
 [s S7374 . 1 `uc 1 C 1 0 :1:0 
 `uc 1 DC 1 0 :1:1 
 `uc 1 Z 1 0 :1:2 
@@ -4527,7 +4527,7 @@ Motor_Opening 3
 Motor_Stoped 4
 Motor_Err 5
 ]
-"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16f1823.h
+"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16lf1823.h
 [s S8998 . 1 `uc 1 C 1 0 :1:0 
 `uc 1 DC 1 0 :1:1 
 `uc 1 Z 1 0 :1:2 
@@ -5424,7 +5424,7 @@ Motor_Err 5
 AutoMode 0
 ManualMode 1
 ]
-"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16f1823.h
+"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16lf1823.h
 [s S10611 . 1 `uc 1 C 1 0 :1:0 
 `uc 1 DC 1 0 :1:1 
 `uc 1 Z 1 0 :1:2 
@@ -8128,7 +8128,7 @@ Motor_Opening 3
 Motor_Stoped 4
 Motor_Err 5
 ]
-"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16f1823.h
+"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16lf1823.h
 [s S15458 . 1 `uc 1 C 1 0 :1:0 
 `uc 1 DC 1 0 :1:1 
 `uc 1 Z 1 0 :1:2 
@@ -10980,7 +10980,7 @@ eE2State_ManClose 4
 [v _PowerSwitch_WaitReady `(i  1 e 2 0 ]
 "64
 [v _PowerSwitch_Scan `(v  1 e 0 0 ]
-"53 main.c
+"58 main.c
 [v _main `(i  1 e 2 0 ]
 "14 motor.c
 [v _Motor_Init `(v  1 e 0 0 ]
@@ -11030,7 +11030,7 @@ eE2State_ManClose 4
 [v _Uart_SendDataLen `(v  1 e 0 0 ]
 "77
 [v _Uart_ShowInt `(v  1 e 0 0 ]
-"132 /hitech/products/compilers/pic/pro/9.82/dist/linux/include/pic16f1823.h
+"132 /hitech/products/compilers/pic/pro/9.82/dist/linux/include/pic16lf1823.h
 [v _INDF0 `VEuc  1 e 1 @0 ]
 "136
 [v _INDF1 `VEuc  1 e 1 @1 ]
@@ -12186,7 +12186,7 @@ eE2State_ManClose 4
 [v _TOSL `VEuc  1 e 1 @4078 ]
 "2435
 [v _TOSH `VEuc  1 e 1 @4079 ]
-"162 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16f1823.h
+"162 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16lf1823.h
 [v _STATUSbits `VES36  1 e 1 @3 ]
 "209
 [v _BSRbits `VES67  1 e 1 @8 ]
@@ -12346,11 +12346,11 @@ eE2State_ManClose 4
 [v _PowerSwitch_Cnt `ui  1 s 2 PowerSwitch_Cnt ]
 "6
 [v _PowerSwitch_EnableCnt `uc  1 s 1 PowerSwitch_EnableCnt ]
-"39 main.c
+"44 main.c
 [v _flag_uart `uc  1 e 1 0 ]
-"49
+"54
 [v _RunMode_t `E2464  1 e 1 0 ]
-"50
+"55
 [v _isLowPower `uc  1 e 1 0 ]
 "7 motor.c
 [v _Motor_RunSta `uc  1 e 1 0 ]
@@ -12364,17 +12364,17 @@ eE2State_ManClose 4
 [v _average `ul  1 e 4 0 ]
 "29
 [v _numOf120ms `ui  1 e 2 0 ]
-"53 main.c
+"58 main.c
 [v _main `(i  1 e 2 0 ]
 {
-"80
+"85
 [v main@i `i  1 a 2 14 ]
-"57
+"62
 [v main@tmpbuf `uc  1 a 1 16 ]
-"53
+"58
 [v main@argc `i  1 p 2 9 ]
 [v main@argv `**uc  1 p 2 11 ]
-"173
+"178
 } 0
 "152 logic_control.c
 [v _MainLoop `(v  1 e 0 0 ]

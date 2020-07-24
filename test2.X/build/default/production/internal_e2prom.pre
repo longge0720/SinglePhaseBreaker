@@ -115,7 +115,7 @@ void internal_E2Read(uint8_t addr,uint8_t *dat,uint8_t len);
 void internal_E2Write(uint8_t addr,uint8_t *dat,uint8_t len);
 void e2SavePara(e2Enum_t val);
 
-# 132 "C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16f1823.h"
+# 132 "C:\Program Files (x86)\HI-TECH Software\PICC\9.82\include\pic16lf1823.h"
 volatile unsigned char INDF0 @ 0x000;
 
 
