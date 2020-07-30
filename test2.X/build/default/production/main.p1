@@ -3660,271 +3660,271 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 204 ]
 [; ;main.c: 86: {
 {
-[; ;main.c: 93: Delay_MS(1250);
-"93
-[e ( _Delay_MS (1 -> -> 1250 `i `ui ]
+[; ;main.c: 94: Delay_MS(1200);
 "94
+[e ( _Delay_MS (1 -> -> 1200 `i `ui ]
+"95
 }
 "85
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 6 `i 204  ]
 [e :U 205 ]
-"94
+"95
 }
-[; ;main.c: 94: }
-[; ;main.c: 96: if(Ctr_Signal == Ctrl_SignalValid)
-"96
-[e $ ! == -> _Ctr_Signal `i -> . `E2373 1 `i 207  ]
-[; ;main.c: 97: {
+[; ;main.c: 95: }
+[; ;main.c: 97: if(Ctr_Signal == Ctrl_SignalValid)
 "97
+[e $ ! == -> _Ctr_Signal `i -> . `E2373 1 `i 207  ]
+[; ;main.c: 98: {
+"98
 {
-[; ;main.c: 99: if((gE2promState.systemState ==eE2State_AutoOpen ) || (gE2promState.systemState ==eE2State_AutoOpen ))
-"99
-[e $ ! || == -> . _gE2promState 1 `i -> . `E2436 1 `i == -> . _gE2promState 1 `i -> . `E2436 1 `i 208  ]
-[; ;main.c: 100: {
+[; ;main.c: 100: if((gE2promState.systemState ==eE2State_AutoOpen ) || (gE2promState.systemState ==eE2State_AutoOpen ))
 "100
-{
-[; ;main.c: 101: Ctr_SignalBck = Ctrl_SignalInvalid;
+[e $ ! || == -> . _gE2promState 1 `i -> . `E2436 1 `i == -> . _gE2promState 1 `i -> . `E2436 1 `i 208  ]
+[; ;main.c: 101: {
 "101
-[e = _Ctr_SignalBck -> . `E2373 0 `uc ]
+{
+[; ;main.c: 102: Ctr_SignalBck = Ctrl_SignalInvalid;
 "102
-}
-[; ;main.c: 102: }
-[e $U 209  ]
+[e = _Ctr_SignalBck -> . `E2373 0 `uc ]
 "103
+}
+[; ;main.c: 103: }
+[e $U 209  ]
+"104
 [e :U 208 ]
-[; ;main.c: 103: else
-[; ;main.c: 105: Ctr_SignalBck = Ctr_Signal;
-"105
+[; ;main.c: 104: else
+[; ;main.c: 106: Ctr_SignalBck = Ctr_Signal;
+"106
 [e = _Ctr_SignalBck _Ctr_Signal ]
 [e :U 209 ]
-"107
-}
-[; ;main.c: 107: }
-[e $U 210  ]
 "108
-[e :U 207 ]
-[; ;main.c: 108: else
-[; ;main.c: 109: {
+}
+[; ;main.c: 108: }
+[e $U 210  ]
 "109
-{
-[; ;main.c: 110: Ctr_SignalBck = Ctrl_SignalValid;
+[e :U 207 ]
+[; ;main.c: 109: else
+[; ;main.c: 110: {
 "110
+{
+[; ;main.c: 111: Ctr_SignalBck = Ctrl_SignalValid;
+"111
 [e = _Ctr_SignalBck -> . `E2373 1 `uc ]
-"112
+"113
 }
 [e :U 210 ]
-[; ;main.c: 112: }
-[; ;main.c: 113: Motor_Stop();
-"113
+[; ;main.c: 113: }
+[; ;main.c: 114: Motor_Stop();
+"114
 [e ( _Motor_Stop ..  ]
-[; ;main.c: 115: WatchDog_Init();
-"115
-[e ( _WatchDog_Init ..  ]
-[; ;main.c: 116: isLowPower = NormalMode;
+[; ;main.c: 116: WatchDog_Init();
 "116
-[e = _isLowPower -> . `E2464 0 `uc ]
-[; ;main.c: 117: numOf120ms = 0;
+[e ( _WatchDog_Init ..  ]
+[; ;main.c: 117: isLowPower = NormalMode;
 "117
+[e = _isLowPower -> . `E2464 0 `uc ]
+[; ;main.c: 118: numOf120ms = 0;
+"118
 [e = _numOf120ms -> -> 0 `i `ui ]
-[; ;main.c: 119: while(1)
-"119
-[e :U 212 ]
-[; ;main.c: 120: {
+[; ;main.c: 120: while(1)
 "120
-{
-[; ;main.c: 121: if(isLowPower == NormalMode)
+[e :U 212 ]
+[; ;main.c: 121: {
 "121
-[e $ ! == -> _isLowPower `i -> . `E2464 0 `i 214  ]
-[; ;main.c: 122: {
+{
+[; ;main.c: 122: if(isLowPower == NormalMode)
 "122
-{
-[; ;main.c: 123: Feed_WatchDog();
+[e $ ! == -> _isLowPower `i -> . `E2464 0 `i 214  ]
+[; ;main.c: 123: {
 "123
-[e ( _Feed_WatchDog ..  ]
-[; ;main.c: 124: KeyDriver();
-"124
-[e ( _KeyDriver ..  ]
-[; ;main.c: 125: MainLoop();
-"125
-[e ( _MainLoop ..  ]
-[; ;main.c: 126: if(RA2 == 0)
-"126
-[e $ ! == -> _RA2 `i -> 0 `i 215  ]
-[; ;main.c: 127: {
-"127
 {
-[; ;main.c: 128: WatchDog_Reset();
+[; ;main.c: 124: Feed_WatchDog();
+"124
+[e ( _Feed_WatchDog ..  ]
+[; ;main.c: 125: KeyDriver();
+"125
+[e ( _KeyDriver ..  ]
+[; ;main.c: 126: MainLoop();
+"126
+[e ( _MainLoop ..  ]
+[; ;main.c: 127: if(RA2 == 0)
+"127
+[e $ ! == -> _RA2 `i -> 0 `i 215  ]
+[; ;main.c: 128: {
 "128
-[e ( _WatchDog_Reset ..  ]
+{
+[; ;main.c: 129: WatchDog_Reset();
 "129
-}
-[e :U 215 ]
+[e ( _WatchDog_Reset ..  ]
 "130
 }
-[; ;main.c: 129: }
-[; ;main.c: 130: }
-[e $U 216  ]
+[e :U 215 ]
 "131
-[e :U 214 ]
-[; ;main.c: 131: else if(isLowPower == LowPowerMode)
-[e $ ! == -> _isLowPower `i -> . `E2464 1 `i 217  ]
-[; ;main.c: 132: {
-"132
-{
-[; ;main.c: 133: INTCON &= ~(0x01 << 7);
-"133
-[e =& _INTCON -> ~ << -> 1 `i -> 7 `i `uc ]
-[; ;main.c: 134: ADCON0 &= ~0x01;
-"134
-[e =& _ADCON0 -> ~ -> 1 `i `uc ]
-[; ;main.c: 135: Motor_LowPower();
-"135
-[e ( _Motor_LowPower ..  ]
-[; ;main.c: 136: PIC_ConfigClock32Khz();
-"136
-[e ( _PIC_ConfigClock32Khz ..  ]
-[; ;main.c: 137: if(Ctr_Signal == Ctrl_SignalValid)
-"137
-[e $ ! == -> _Ctr_Signal `i -> . `E2373 1 `i 218  ]
-[; ;main.c: 138: {
-"138
-{
-[; ;main.c: 139: tmpbuf = 0xff;
-"139
-[e = _tmpbuf -> -> 255 `i `uc ]
-"140
 }
-[; ;main.c: 140: }
-[e $U 219  ]
-"141
-[e :U 218 ]
-[; ;main.c: 141: else
-[; ;main.c: 142: {
-"142
+[; ;main.c: 130: }
+[; ;main.c: 131: }
+[e $U 216  ]
+"132
+[e :U 214 ]
+[; ;main.c: 132: else if(isLowPower == LowPowerMode)
+[e $ ! == -> _isLowPower `i -> . `E2464 1 `i 217  ]
+[; ;main.c: 133: {
+"133
 {
-[; ;main.c: 143: tmpbuf = 0x00;
+[; ;main.c: 134: INTCON &= ~(0x01 << 7);
+"134
+[e =& _INTCON -> ~ << -> 1 `i -> 7 `i `uc ]
+[; ;main.c: 135: ADCON0 &= ~0x01;
+"135
+[e =& _ADCON0 -> ~ -> 1 `i `uc ]
+[; ;main.c: 136: Motor_LowPower();
+"136
+[e ( _Motor_LowPower ..  ]
+[; ;main.c: 137: PIC_ConfigClock32Khz();
+"137
+[e ( _PIC_ConfigClock32Khz ..  ]
+[; ;main.c: 138: if(Ctr_Signal == Ctrl_SignalValid)
+"138
+[e $ ! == -> _Ctr_Signal `i -> . `E2373 1 `i 218  ]
+[; ;main.c: 139: {
+"139
+{
+[; ;main.c: 140: tmpbuf = 0xff;
+"140
+[e = _tmpbuf -> -> 255 `i `uc ]
+"141
+}
+[; ;main.c: 141: }
+[e $U 219  ]
+"142
+[e :U 218 ]
+[; ;main.c: 142: else
+[; ;main.c: 143: {
 "143
-[e = _tmpbuf -> -> 0 `i `uc ]
+{
+[; ;main.c: 144: tmpbuf = 0x00;
 "144
+[e = _tmpbuf -> -> 0 `i `uc ]
+"145
 }
 [e :U 219 ]
-[; ;main.c: 144: }
-[; ;main.c: 145: while(1)
-"145
-[e :U 221 ]
-[; ;main.c: 146: {
+[; ;main.c: 145: }
+[; ;main.c: 146: while(1)
 "146
-{
-[; ;main.c: 147: if(RC1 == 0)
+[e :U 221 ]
+[; ;main.c: 147: {
 "147
-[e $ ! == -> _RC1 `i -> 0 `i 223  ]
-[; ;main.c: 148: {
+{
+[; ;main.c: 148: if(RC1 == 0)
 "148
-{
-[; ;main.c: 149: tmpbuf = (tmpbuf << 1) | 0;
+[e $ ! == -> _RC1 `i -> 0 `i 223  ]
+[; ;main.c: 149: {
 "149
-[e = _tmpbuf -> | << -> _tmpbuf `i -> 1 `i -> 0 `i `uc ]
-"150
-}
-[; ;main.c: 150: }
-[e $U 224  ]
-"151
-[e :U 223 ]
-[; ;main.c: 151: else if(RC1 == 1)
-[e $ ! == -> _RC1 `i -> 1 `i 225  ]
-[; ;main.c: 152: {
-"152
 {
-[; ;main.c: 153: tmpbuf = (tmpbuf << 1) | 1;
+[; ;main.c: 150: tmpbuf = (tmpbuf << 1) | 0;
+"150
+[e = _tmpbuf -> | << -> _tmpbuf `i -> 1 `i -> 0 `i `uc ]
+"151
+}
+[; ;main.c: 151: }
+[e $U 224  ]
+"152
+[e :U 223 ]
+[; ;main.c: 152: else if(RC1 == 1)
+[e $ ! == -> _RC1 `i -> 1 `i 225  ]
+[; ;main.c: 153: {
 "153
-[e = _tmpbuf -> | << -> _tmpbuf `i -> 1 `i -> 1 `i `uc ]
+{
+[; ;main.c: 154: tmpbuf = (tmpbuf << 1) | 1;
 "154
+[e = _tmpbuf -> | << -> _tmpbuf `i -> 1 `i -> 1 `i `uc ]
+"155
 }
 [e :U 225 ]
-"155
-[e :U 224 ]
-[; ;main.c: 154: }
-[; ;main.c: 155: if((tmpbuf==0xff) && Ctr_Signal == Ctrl_SignalInvalid)
-[e $ ! && == -> _tmpbuf `i -> 255 `i == -> _Ctr_Signal `i -> . `E2373 0 `i 226  ]
-[; ;main.c: 156: {
 "156
-{
-[; ;main.c: 157: break;
+[e :U 224 ]
+[; ;main.c: 155: }
+[; ;main.c: 156: if((tmpbuf==0xff) && Ctr_Signal == Ctrl_SignalInvalid)
+[e $ ! && == -> _tmpbuf `i -> 255 `i == -> _Ctr_Signal `i -> . `E2373 0 `i 226  ]
+[; ;main.c: 157: {
 "157
-[e $U 222  ]
+{
+[; ;main.c: 158: break;
 "158
+[e $U 222  ]
+"159
 }
 [e :U 226 ]
-[; ;main.c: 158: }
-[; ;main.c: 160: if((tmpbuf==0x00) && Ctr_Signal == Ctrl_SignalValid)
-"160
-[e $ ! && == -> _tmpbuf `i -> 0 `i == -> _Ctr_Signal `i -> . `E2373 1 `i 227  ]
-[; ;main.c: 161: {
+[; ;main.c: 159: }
+[; ;main.c: 161: if((tmpbuf==0x00) && Ctr_Signal == Ctrl_SignalValid)
 "161
-{
-[; ;main.c: 162: break;
+[e $ ! && == -> _tmpbuf `i -> 0 `i == -> _Ctr_Signal `i -> . `E2373 1 `i 227  ]
+[; ;main.c: 162: {
 "162
-[e $U 222  ]
+{
+[; ;main.c: 163: break;
 "163
+[e $U 222  ]
+"164
 }
 [e :U 227 ]
-[; ;main.c: 163: }
-[; ;main.c: 164: if(RA2 == 0)
-"164
-[e $ ! == -> _RA2 `i -> 0 `i 228  ]
-[; ;main.c: 165: {
+[; ;main.c: 164: }
+[; ;main.c: 165: if(RA2 == 0)
 "165
-{
-[; ;main.c: 166: WatchDog_Reset();
+[e $ ! == -> _RA2 `i -> 0 `i 228  ]
+[; ;main.c: 166: {
 "166
-[e ( _WatchDog_Reset ..  ]
+{
+[; ;main.c: 167: WatchDog_Reset();
 "167
+[e ( _WatchDog_Reset ..  ]
+"168
 }
 [e :U 228 ]
-[; ;main.c: 167: }
-[; ;main.c: 168: Feed_WatchDog();
-"168
-[e ( _Feed_WatchDog ..  ]
+[; ;main.c: 168: }
+[; ;main.c: 169: Feed_WatchDog();
 "169
+[e ( _Feed_WatchDog ..  ]
+"170
 }
 [e :U 220 ]
-"145
+"146
 [e $U 221  ]
 [e :U 222 ]
-[; ;main.c: 169: }
-[; ;main.c: 170: isLowPower = NormalMode;
-"170
-[e = _isLowPower -> . `E2464 0 `uc ]
-[; ;main.c: 171: numOf120ms = 0;
+[; ;main.c: 170: }
+[; ;main.c: 171: isLowPower = NormalMode;
 "171
-[e = _numOf120ms -> -> 0 `i `ui ]
-[; ;main.c: 172: PIC_ConfigClock();
+[e = _isLowPower -> . `E2464 0 `uc ]
+[; ;main.c: 172: numOf120ms = 0;
 "172
-[e ( _PIC_ConfigClock ..  ]
-[; ;main.c: 173: ADCON0 |= 0x01;
+[e = _numOf120ms -> -> 0 `i `ui ]
+[; ;main.c: 173: PIC_ConfigClock();
 "173
-[e =| _ADCON0 -> -> 1 `i `uc ]
-[; ;main.c: 174: PIC_EnableInterrupt();
+[e ( _PIC_ConfigClock ..  ]
+[; ;main.c: 174: ADCON0 |= 0x01;
 "174
-[e ( _PIC_EnableInterrupt ..  ]
+[e =| _ADCON0 -> -> 1 `i `uc ]
+[; ;main.c: 175: PIC_EnableInterrupt();
 "175
+[e ( _PIC_EnableInterrupt ..  ]
+"176
 }
 [e :U 217 ]
-"176
+"177
 [e :U 216 ]
 }
 [e :U 211 ]
-"119
+"120
 [e $U 212  ]
 [e :U 213 ]
-[; ;main.c: 175: }
 [; ;main.c: 176: }
-[; ;main.c: 177: return (0);
-"177
+[; ;main.c: 177: }
+[; ;main.c: 178: return (0);
+"178
 [e ) -> 0 `i ]
 [e $UE 203  ]
-[; ;main.c: 178: }
-"178
+[; ;main.c: 179: }
+"179
 [e :UE 203 ]
 }

@@ -2700,8 +2700,8 @@ RC5 = 1;
 for(int i=0;i<6;i++)
 {
 
-# 93
-Delay_MS(1250);
+# 94
+Delay_MS(1200);
 }
 
 if(Ctr_Signal == Ctrl_SignalValid)

@@ -23,7 +23,7 @@ Linker command line:
   -ACONFIG=08007h-08008h -pconfig=CONFIG -DCONFIG=2 -AIDLOC=08000h-08003h \
   -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA \
   -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\sunxi\AppData\Local\Temp\s95g.obj \
+  C:\Users\sunxi\AppData\Local\Temp\s4n8.obj \
   dist/default/production\test2.X.production.obj 
 
 Object code version is 3.10
@@ -33,7 +33,7 @@ Machine type is 16LF1823
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\sunxi\AppData\Local\Temp\s95g.obj
+C:\Users\sunxi\AppData\Local\Temp\s4n8.obj
                 end_init                             18       18        2        8       0
                 reset_vec                             0        0        1        0       0
 dist/default/production\test2.X.production.obj

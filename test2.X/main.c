@@ -26,8 +26,8 @@ __CONFIG(WRT_OFF&PLLEN_OFF&LVP_OFF&STVREN_OFF&BORV_19&LVP_ON) ;//重新检查配置字 
 __CONFIG(FOSC_INTOSC & WDTE_OFF & PWRTE_OFF & MCLRE_ON & CP_ON & CPD_ON & BOREN_ON & CLKOUTEN_OFF & IESO_ON & FCMEN_ON);
 __CONFIG(WRT_OFF&PLLEN_ON&LVP_OFF&STVREN_OFF&BORV_19&LVP_ON) ;
 #endif*/
-
-#define VERSION_STR     "V1.0"
+//更改MCU为低压版本 
+#define VERSION_STR     "V1.1"
 /*
  * 先初始化时钟，然后初始化外设（定时器，IO，ADC），PIC子函数调用不能超过8级
  */
@@ -90,7 +90,8 @@ int main(int argc, char** argv)
     //    MOTOR_INA = 0;
     //    MOTOR_INB = 1;
         //Delay_MS(500);
-        Delay_MS(1250);//增加上电延时时间sxl
+        //根据实际测试 缩短上电延时时间控制在9S左右
+        Delay_MS(1200);//增加上电延时时间sxl
     }
 #endif 
     if(Ctr_Signal == Ctrl_SignalValid)//一上电控制信号就有效
