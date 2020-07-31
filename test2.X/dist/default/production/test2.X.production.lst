@@ -1,7 +1,7 @@
 
 
 HI-TECH Software PIC LITE Macro Assembler V9.82 build 9453 
-                                                                                               Thu Jul 30 14:24:17 2020
+                                                                                               Fri Jul 31 17:21:23 2020
 
 HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
      1  0000                     opt subtitle "HI-TECH Software Omniscient Code Generator (Lite mode) build 9453"
@@ -427,7 +427,7 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
    420  0392  340A               	retlw	10
    421  0393  3400               	retlw	0
    422                           psect	strings
-   423                           	file	"C:\Users\sunxi\AppData\Local\Temp\s4n8."
+   423                           	file	"C:\Users\sunxi\AppData\Local\Temp\s6c8."
    424                           	line	#
    425                           psect cinit,class=CODE,delta=2
    426                           global start_initialization
@@ -1340,11 +1340,11 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
   1333                           	
   1334  004E                     l19549:	
   1335                           ;main.c: 86: {
-  1336                           ;main.c: 94: Delay_MS(1200);
-  1337  004E  30B0               	movlw	low(04B0h)
+  1336                           ;main.c: 94: Delay_MS(1250);
+  1337  004E  30E2               	movlw	low(04E2h)
   1338  004F  0020               	movlb 0	; select bank0
   1339  0050  00C6               	movwf	(?_Delay_MS)
-  1340  0051  3004               	movlw	high(04B0h)
+  1340  0051  3004               	movlw	high(04E2h)
   1341  0052  00C7               	movwf	((?_Delay_MS))+1
   1342  0053  3186  2621  3180   	fcall	_Delay_MS
   1343                           	line	85
@@ -6459,7 +6459,7 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 9453
 
 
 HI-TECH Software PICC Macro Assembler V9.82 build 9453 
-Symbol Table                                                                                   Thu Jul 30 14:24:17 2020
+Symbol Table                                                                                   Fri Jul 31 17:21:23 2020
 
         __end_of_ADC_AllPin_Init 06DE                ??_InterruptTimer0 007C                               _RD 0CA8  
         ?_Motor_Counterclockwise 0070                               _WR 0CA9          __size_of_Motor_GetStaus 000B  

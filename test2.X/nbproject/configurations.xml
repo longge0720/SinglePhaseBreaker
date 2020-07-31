@@ -45,7 +45,7 @@
         <targetDevice>PIC16LF1823</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool>pk4hybrid</platformTool>
         <languageToolchain>hi-tech-picc</languageToolchain>
         <languageToolchainVersion>9.82</languageToolchainVersion>
         <platform>3</platform>

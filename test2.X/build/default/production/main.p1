@@ -3660,9 +3660,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 204 ]
 [; ;main.c: 86: {
 {
-[; ;main.c: 94: Delay_MS(1200);
+[; ;main.c: 94: Delay_MS(1250);
 "94
-[e ( _Delay_MS (1 -> -> 1200 `i `ui ]
+[e ( _Delay_MS (1 -> -> 1250 `i `ui ]
 "95
 }
 "85
