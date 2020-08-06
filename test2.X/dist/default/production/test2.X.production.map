@@ -23,7 +23,7 @@ Linker command line:
   -ACONFIG=08007h-08008h -pconfig=CONFIG -DCONFIG=2 -AIDLOC=08000h-08003h \
   -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA \
   -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\sunxi\AppData\Local\Temp\s6c8.obj \
+  C:\Users\sunxi\AppData\Local\Temp\sbik.obj \
   dist/default/production\test2.X.production.obj 
 
 Object code version is 3.10
@@ -33,7 +33,7 @@ Machine type is 16LF1823
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\sunxi\AppData\Local\Temp\s6c8.obj
+C:\Users\sunxi\AppData\Local\Temp\sbik.obj
                 end_init                             18       18        2        8       0
                 reset_vec                             0        0        1        0       0
 dist/default/production\test2.X.production.obj
@@ -75,8 +75,8 @@ dist/default/production\test2.X.production.obj
                 text953                             5FD      5FD       13      728       0
                 text952                             685      685        E      728       0
                 text951                             5A9      5A9       16      728       0
-                text950                             1E4      1E4       A2        8       0
-                text949                             119      119       CB        8       0
+                text950                             1EB      1EB       A2        8       0
+                text949                             119      119       D2        8       0
                 text948                             6E9      6E9        7      728       0
                 maintext                             1A       1A       FF        8       0
                 cstackBANK0                          46       46       11       20       1
@@ -131,8 +131,8 @@ TOTAL           Name                               Link     Load   Length     Sp
                 text953                             5FD      5FD       13         0
                 text952                             685      685        E         0
                 text951                             5A9      5A9       16         0
-                text950                             1E4      1E4       A2         0
-                text949                             119      119       CB         0
+                text950                             1EB      1EB       A2         0
+                text949                             119      119       D2         0
                 text948                             6E9      6E9        7         0
                 maintext                             1A       1A       FF         0
                 clrtext                             6F0      6F0        6         0
@@ -299,7 +299,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000001  000001         0       0  CODE        2
-                intentry                       000004  000282  000286         8       0  CODE        2
+                intentry                       000004  000289  00028D         8       0  CODE        2
                 bssBANK0                       000020  00003A  00005A        20       1  BANK0       1
                 cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
                 strings                        000300  000094  000394       600       0  STRING      2
@@ -314,14 +314,14 @@ UNUSED ADDRESS RANGES
         BANK1            000A0-000BF              20           1
         BIGRAM           02000-0206F              70           1
         CODE             00001-00003               3           2
-                         00286-002FF              7A
+                         0028D-002FF              73
                          00709-007FF              F7
         CONST            00001-00003               3           2
-                         00286-002FF              7A
+                         0028D-002FF              73
                          00709-007FF              F7
         EEDATA           0F000-0F0FF             100           2
         ENTRY            00001-00003               3           2
-                         00286-002FF              7A
+                         0028D-002FF              73
                          00709-007FF              F7
         IDLOC            08000-08003               4           2
         RAM              0005A-0006F              16           1
@@ -359,10 +359,10 @@ UNUSED ADDRESS RANGES
         SFR8             00400-0046F              70           1
         SFR9             00480-004EF              70           1
         STRCODE          00001-00003               3           2
-                         00286-002FF              7A
+                         0028D-002FF              73
                          00709-007FF              F7
         STRING           00001-00003               3           2
-                         00286-002FF              7A
+                         0028D-002FF              73
                          00709-007FF              F7
 
                                   Symbol Table
@@ -481,7 +481,7 @@ _AutoOrManualMode                bssBANK0     00039
 _BAUDCON                         (abs)        0019F
 _CARRY                           (abs)        00018
 _CFGS                            (abs)        00CAE
-_ContrlSignal_Driver             text950      001E4
+_ContrlSignal_Driver             text950      001EB
 _Contrl_Signal                   text983      00394
 _Ctr_Signal                      bssBANK0     0003A
 _Ctr_SignalBck                   bssBANK0     0003B
@@ -741,7 +741,7 @@ __S1                             (abs)        0007E
 __S2                             (abs)        00000
 __end_of_ADC_AllPin_Init         text962      006DE
 __end_of_ADC_Init                text958      005FD
-__end_of_ContrlSignal_Driver     text950      00286
+__end_of_ContrlSignal_Driver     text950      0028D
 __end_of_Contrl_Signal           text983      00411
 __end_of_Delay_MS                text972      00632
 __end_of_Delay_Scan              text985      006C7
@@ -756,7 +756,7 @@ __end_of_KeyScan                 text987      0057C
 __end_of_MainLoop                text948      006F0
 __end_of_Motor_Clockwise         text964      006AD
 __end_of_Motor_Counterclockwise  text965      006BA
-__end_of_Motor_Driver            text949      001E4
+__end_of_Motor_Driver            text949      001EB
 __end_of_Motor_GetStaus          text966      006E9
 __end_of_Motor_Init              text973      004E0
 __end_of_Motor_LowPower          text968      00675
@@ -790,7 +790,7 @@ __pmaintext                      maintext     0001A
 __pstrings                       strings      00300
 __ptext948                       text948      006E9
 __ptext949                       text949      00119
-__ptext950                       text950      001E4
+__ptext950                       text950      001EB
 __ptext951                       text951      005A9
 __ptext952                       text952      00685
 __ptext953                       text953      005FD

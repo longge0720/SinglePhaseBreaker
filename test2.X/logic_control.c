@@ -97,6 +97,7 @@ void Motor_Driver(void)
             {
                 DBG_UART_SENDSTR((uint8_t*)"M auto close\r\n");
                 Motor_RunSta = Motor_Stoped;                                    //电机信号使用者，且发送停止信号
+                Delay_MS(75);//在这个地方增加延时
                 Motor_Stop();//电机停止运行
                 e2SavePara(eE2State_AutoClose);  
     

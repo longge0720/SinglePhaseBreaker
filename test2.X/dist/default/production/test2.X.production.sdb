@@ -10966,7 +10966,7 @@ eE2State_ManClose 4
 [v _ContrlSignal_Driver `(v  1 e 0 0 ]
 "90
 [v _Motor_Driver `(v  1 e 0 0 ]
-"152
+"153
 [v _MainLoop `(v  1 e 0 0 ]
 "10 lowpower.c
 [v _PowerSwitch_Init `(v  1 e 0 0 ]
@@ -12376,15 +12376,15 @@ eE2State_ManClose 4
 [v main@argv `**uc  1 p 2 11 ]
 "179
 } 0
-"152 logic_control.c
+"153 logic_control.c
 [v _MainLoop `(v  1 e 0 0 ]
 {
-"155
+"156
 } 0
 "90
 [v _Motor_Driver `(v  1 e 0 0 ]
 {
-"149
+"150
 } 0
 "35
 [v _ContrlSignal_Driver `(v  1 e 0 0 ]

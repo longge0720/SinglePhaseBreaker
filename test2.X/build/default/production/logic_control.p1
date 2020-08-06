@@ -3753,148 +3753,151 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;logic_control.c: 99: Motor_RunSta = Motor_Stoped;
 "99
 [e = _Motor_RunSta -> . `E2367 4 `uc ]
-[; ;logic_control.c: 100: Motor_Stop();
+[; ;logic_control.c: 100: Delay_MS(75);
 "100
-[e ( _Motor_Stop ..  ]
-[; ;logic_control.c: 101: e2SavePara(eE2State_AutoClose);
+[e ( _Delay_MS (1 -> -> 75 `i `ui ]
+[; ;logic_control.c: 101: Motor_Stop();
 "101
-[e ( _e2SavePara (1 . `E2436 2 ]
-"103
-}
-[; ;logic_control.c: 103: }
-[e $U 222  ]
-"104
-[e :U 221 ]
-[; ;logic_control.c: 104: else if(Motor_RunTime >= 6000)
-[e $ ! >= _Motor_RunTime -> -> 6000 `i `ui 223  ]
-[; ;logic_control.c: 105: {
-"105
-{
-[; ;logic_control.c: 106: Uart_SendStr((uint8_t*)"M auto close timeout\r\n");
-"106
-[e ( _Uart_SendStr (1 -> :s 6C `*uc ]
-[; ;logic_control.c: 107: Motor_RunSta = Motor_Stoped;
-"107
-[e = _Motor_RunSta -> . `E2367 4 `uc ]
-[; ;logic_control.c: 108: Motor_Stop();
-"108
 [e ( _Motor_Stop ..  ]
-"110
+[; ;logic_control.c: 102: e2SavePara(eE2State_AutoClose);
+"102
+[e ( _e2SavePara (1 . `E2436 2 ]
+"104
+}
+[; ;logic_control.c: 104: }
+[e $U 222  ]
+"105
+[e :U 221 ]
+[; ;logic_control.c: 105: else if(Motor_RunTime >= 6000)
+[e $ ! >= _Motor_RunTime -> -> 6000 `i `ui 223  ]
+[; ;logic_control.c: 106: {
+"106
+{
+[; ;logic_control.c: 107: Uart_SendStr((uint8_t*)"M auto close timeout\r\n");
+"107
+[e ( _Uart_SendStr (1 -> :s 6C `*uc ]
+[; ;logic_control.c: 108: Motor_RunSta = Motor_Stoped;
+"108
+[e = _Motor_RunSta -> . `E2367 4 `uc ]
+[; ;logic_control.c: 109: Motor_Stop();
+"109
+[e ( _Motor_Stop ..  ]
+"111
 }
 [e :U 223 ]
-"111
-[e :U 222 ]
-[; ;logic_control.c: 110: }
-[; ;logic_control.c: 111: break;
-[e $U 218  ]
-[; ;logic_control.c: 112: case Motor_ManualClosing:
 "112
-[e :U 224 ]
-[; ;logic_control.c: 113: if((System_Sta == System_Closed)&&(Motor_RunTime < 6000))
+[e :U 222 ]
+[; ;logic_control.c: 111: }
+[; ;logic_control.c: 112: break;
+[e $U 218  ]
+[; ;logic_control.c: 113: case Motor_ManualClosing:
 "113
-[e $ ! && == -> _System_Sta `i -> . `E2390 1 `i < _Motor_RunTime -> -> 6000 `i `ui 225  ]
-[; ;logic_control.c: 114: {
+[e :U 224 ]
+[; ;logic_control.c: 114: if((System_Sta == System_Closed)&&(Motor_RunTime < 6000))
 "114
-{
-[; ;logic_control.c: 115: Uart_SendStr((uint8_t*)"M man close\r\n");
+[e $ ! && == -> _System_Sta `i -> . `E2390 1 `i < _Motor_RunTime -> -> 6000 `i `ui 225  ]
+[; ;logic_control.c: 115: {
 "115
-[e ( _Uart_SendStr (1 -> :s 7C `*uc ]
-[; ;logic_control.c: 116: Delay_MS(2);
-"116
-[e ( _Delay_MS (1 -> -> 2 `i `ui ]
-[; ;logic_control.c: 117: Motor_RunSta = Motor_Stoped;
-"117
-[e = _Motor_RunSta -> . `E2367 4 `uc ]
-[; ;logic_control.c: 118: Motor_Stop();
-"118
-[e ( _Motor_Stop ..  ]
-[; ;logic_control.c: 119: e2SavePara(eE2State_ManClose);
-"119
-[e ( _e2SavePara (1 . `E2436 4 ]
-"120
-}
-[; ;logic_control.c: 120: }
-[e $U 226  ]
-"121
-[e :U 225 ]
-[; ;logic_control.c: 121: else if(Motor_RunTime >= 6000)
-[e $ ! >= _Motor_RunTime -> -> 6000 `i `ui 227  ]
-[; ;logic_control.c: 122: {
-"122
 {
-[; ;logic_control.c: 123: Uart_SendStr((uint8_t*)"M man close timeout\r\n");
-"123
-[e ( _Uart_SendStr (1 -> :s 8C `*uc ]
-[; ;logic_control.c: 124: Motor_RunSta = Motor_Stoped;
-"124
+[; ;logic_control.c: 116: Uart_SendStr((uint8_t*)"M man close\r\n");
+"116
+[e ( _Uart_SendStr (1 -> :s 7C `*uc ]
+[; ;logic_control.c: 117: Delay_MS(2);
+"117
+[e ( _Delay_MS (1 -> -> 2 `i `ui ]
+[; ;logic_control.c: 118: Motor_RunSta = Motor_Stoped;
+"118
 [e = _Motor_RunSta -> . `E2367 4 `uc ]
-[; ;logic_control.c: 125: Motor_Stop();
-"125
+[; ;logic_control.c: 119: Motor_Stop();
+"119
 [e ( _Motor_Stop ..  ]
-"127
+[; ;logic_control.c: 120: e2SavePara(eE2State_ManClose);
+"120
+[e ( _e2SavePara (1 . `E2436 4 ]
+"121
+}
+[; ;logic_control.c: 121: }
+[e $U 226  ]
+"122
+[e :U 225 ]
+[; ;logic_control.c: 122: else if(Motor_RunTime >= 6000)
+[e $ ! >= _Motor_RunTime -> -> 6000 `i `ui 227  ]
+[; ;logic_control.c: 123: {
+"123
+{
+[; ;logic_control.c: 124: Uart_SendStr((uint8_t*)"M man close timeout\r\n");
+"124
+[e ( _Uart_SendStr (1 -> :s 8C `*uc ]
+[; ;logic_control.c: 125: Motor_RunSta = Motor_Stoped;
+"125
+[e = _Motor_RunSta -> . `E2367 4 `uc ]
+[; ;logic_control.c: 126: Motor_Stop();
+"126
+[e ( _Motor_Stop ..  ]
+"128
 }
 [e :U 227 ]
-"128
-[e :U 226 ]
-[; ;logic_control.c: 127: }
-[; ;logic_control.c: 128: break;
-[e $U 218  ]
-[; ;logic_control.c: 129: case Motor_Opening:
 "129
-[e :U 228 ]
-[; ;logic_control.c: 130: if((System_Sta == System_Opened)&&(Motor_RunTime > 500))
+[e :U 226 ]
+[; ;logic_control.c: 128: }
+[; ;logic_control.c: 129: break;
+[e $U 218  ]
+[; ;logic_control.c: 130: case Motor_Opening:
 "130
-[e $ ! && == -> _System_Sta `i -> . `E2390 0 `i > _Motor_RunTime -> -> 500 `i `ui 229  ]
-[; ;logic_control.c: 131: {
+[e :U 228 ]
+[; ;logic_control.c: 131: if((System_Sta == System_Opened)&&(Motor_RunTime > 500))
 "131
-{
-[; ;logic_control.c: 132: Uart_SendStr((uint8_t*)"M open\r\n");
+[e $ ! && == -> _System_Sta `i -> . `E2390 0 `i > _Motor_RunTime -> -> 500 `i `ui 229  ]
+[; ;logic_control.c: 132: {
 "132
-[e ( _Uart_SendStr (1 -> :s 9C `*uc ]
-[; ;logic_control.c: 133: Motor_RunSta = Motor_Stoped;
-"133
-[e = _Motor_RunSta -> . `E2367 4 `uc ]
-[; ;logic_control.c: 134: Motor_Stop();
-"134
-[e ( _Motor_Stop ..  ]
-[; ;logic_control.c: 135: e2SavePara(eE2State_AutoOpen);
-"135
-[e ( _e2SavePara (1 . `E2436 1 ]
-"136
-}
-[; ;logic_control.c: 136: }
-[e $U 230  ]
-"137
-[e :U 229 ]
-[; ;logic_control.c: 137: else if(Motor_RunTime >= 6000)
-[e $ ! >= _Motor_RunTime -> -> 6000 `i `ui 231  ]
-[; ;logic_control.c: 138: {
-"138
 {
-[; ;logic_control.c: 139: Uart_SendStr((uint8_t*)"M open timeout\r\n");
-"139
-[e ( _Uart_SendStr (1 -> :s 10C `*uc ]
-[; ;logic_control.c: 140: Motor_RunSta = Motor_Stoped;
-"140
+[; ;logic_control.c: 133: Uart_SendStr((uint8_t*)"M open\r\n");
+"133
+[e ( _Uart_SendStr (1 -> :s 9C `*uc ]
+[; ;logic_control.c: 134: Motor_RunSta = Motor_Stoped;
+"134
 [e = _Motor_RunSta -> . `E2367 4 `uc ]
-[; ;logic_control.c: 141: Motor_Stop();
-"141
+[; ;logic_control.c: 135: Motor_Stop();
+"135
 [e ( _Motor_Stop ..  ]
-"143
+[; ;logic_control.c: 136: e2SavePara(eE2State_AutoOpen);
+"136
+[e ( _e2SavePara (1 . `E2436 1 ]
+"137
+}
+[; ;logic_control.c: 137: }
+[e $U 230  ]
+"138
+[e :U 229 ]
+[; ;logic_control.c: 138: else if(Motor_RunTime >= 6000)
+[e $ ! >= _Motor_RunTime -> -> 6000 `i `ui 231  ]
+[; ;logic_control.c: 139: {
+"139
+{
+[; ;logic_control.c: 140: Uart_SendStr((uint8_t*)"M open timeout\r\n");
+"140
+[e ( _Uart_SendStr (1 -> :s 10C `*uc ]
+[; ;logic_control.c: 141: Motor_RunSta = Motor_Stoped;
+"141
+[e = _Motor_RunSta -> . `E2367 4 `uc ]
+[; ;logic_control.c: 142: Motor_Stop();
+"142
+[e ( _Motor_Stop ..  ]
+"144
 }
 [e :U 231 ]
-"144
+"145
 [e :U 230 ]
-[; ;logic_control.c: 143: }
-[; ;logic_control.c: 144: break;
+[; ;logic_control.c: 144: }
+[; ;logic_control.c: 145: break;
 [e $U 218  ]
-[; ;logic_control.c: 146: default:break;
-"146
+[; ;logic_control.c: 147: default:break;
+"147
 [e :U 232 ]
 [e $U 218  ]
-"147
+"148
 }
-[; ;logic_control.c: 147: }
+[; ;logic_control.c: 148: }
 [e $U 218  ]
 "93
 [e :U 219 ]
@@ -3902,27 +3905,27 @@ Version 3.2 HI-TECH Software Intermediate Code
  , $ -> . `E2367 2 `uc 224
  , $ -> . `E2367 3 `uc 228
  232 ]
-"147
+"148
 [e :U 218 ]
-[; ;logic_control.c: 149: }
-"149
+[; ;logic_control.c: 150: }
+"150
 [e :UE 217 ]
 }
-"152
+"153
 [v _MainLoop `(v  1 ef ]
 {
-[; ;logic_control.c: 151: void MainLoop(void)
-[; ;logic_control.c: 152: {
+[; ;logic_control.c: 152: void MainLoop(void)
+[; ;logic_control.c: 153: {
 [e :U _MainLoop ]
 [f ]
-[; ;logic_control.c: 153: ContrlSignal_Driver();
-"153
-[e ( _ContrlSignal_Driver ..  ]
-[; ;logic_control.c: 154: Motor_Driver();
+[; ;logic_control.c: 154: ContrlSignal_Driver();
 "154
-[e ( _Motor_Driver ..  ]
-[; ;logic_control.c: 155: }
+[e ( _ContrlSignal_Driver ..  ]
+[; ;logic_control.c: 155: Motor_Driver();
 "155
+[e ( _Motor_Driver ..  ]
+[; ;logic_control.c: 156: }
+"156
 [e :UE 233 ]
 }
 [a 10C 77 32 111 112 101 110 32 116 105 109 101 111 117 116 13 10 0 ]

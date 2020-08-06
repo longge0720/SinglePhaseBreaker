@@ -3,7 +3,7 @@ _KeyAction: CODE, 1471 0 21
 _Feed_WatchDog: CODE, 1798 0 2
 _Contrl_Signal: CODE, 916 0 125
 _PIC_ConfigGPIO: CODE, 1620 0 17
-_ContrlSignal_Driver: CODE, 484 0 162
+_ContrlSignal_Driver: CODE, 491 0 162
 _Motor_Stop: CODE, 1449 0 22
 _e2SavePara: CODE, 1533 0 19
 _Motor_GetStaus: CODE, 1758 0 11
@@ -38,5 +38,5 @@ _Get_ADCValue: CODE, 1153 0 49
 _ADC_Init: CODE, 1513 0 20
 _internal_E2Read: CODE, 1101 0 52
 _PowerSwitch_Disable: CODE, 1669 0 14
-_Motor_Driver: CODE, 281 0 203
-Total: 1494
+_Motor_Driver: CODE, 281 0 210
+Total: 1501
